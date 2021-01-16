@@ -106,14 +106,12 @@ body {
 .main {
   width: 100vw;
   height: 100vh;
-  background: url("../img/DMT_back.png") 0 0/100% 100% no-repeat;
+  background: url("../img/DMT_back.png") 15px 0/100% 100% no-repeat;
   position: relative;
 }
 
 .main__container {
-  margin: 0 auto;
   padding: 0 37px;
-  max-width: 1600px;
 }
 
 .main__content {
@@ -140,13 +138,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
-.main__img img {
   width: 100%;
   height: 100%;
+  background: url("../img/DMT_front.png") center/102% 102% no-repeat;
 }
 
 .content__top {
@@ -190,4 +184,6 @@ body {
   max-width: 274px;
 }
 
-.webp .main{ background: url(../img/DMT_back.webp) 0 0/100% 100% no-repeat; }
+.webp .main{ background: url(../img/DMT_back.webp) 15px 0/100% 100% no-repeat; }
+
+.webp .main__img{ background: url(../img/DMT_front.webp) center/102% 102% no-repeat; }
