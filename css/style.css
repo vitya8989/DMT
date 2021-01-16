@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Steinbeck";
+  font-display: swap;
+  src: url("../fonts/Steinbeck Regular.woff") format("woff"), url("../fonts/Steinbeck Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Steinbeck;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/DMT_back.png") 0 0/100% 100% no-repeat;
+  position: relative;
+}
+
+.main__container {
+  margin: 0 auto;
+  padding: 0 37px;
+  max-width: 1600px;
+}
+
+.main__content {
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+  padding: 40px 0;
+}
+
+.main__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.content__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content__title {
+  font-size: 62px;
+  line-height: 56px;
+  color: #ffffff;
+  max-width: 208px;
+}
+
+.content__link {
+  font-size: 32px;
+  line-height: 50px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.content__link a {
+  color: #ffffff;
+  -webkit-transition: color 0.2s ease 0s;
+  -o-transition: color 0.2s ease 0s;
+  transition: color 0.2s ease 0s;
+}
+
+.content__link a:hover {
+  color: #f5b7ae;
+}
+
+.content__subtitle {
+  font-size: 62px;
+  line-height: 56px;
+  color: #ffffff;
+  max-width: 274px;
+}
+
+.webp .main{ background: url(../img/DMT_back.webp) 0 0/100% 100% no-repeat; }
