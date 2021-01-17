@@ -106,7 +106,7 @@ body {
 .main {
   width: 100vw;
   height: 100vh;
-  background: url("../img/DMT_back.png") 15px 0/100% 100% no-repeat;
+  background: url("../img/DMT_back.jpg") 15px 0/100% 100% no-repeat;
   position: relative;
 }
 
