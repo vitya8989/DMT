@@ -183,7 +183,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 30px;
 }
 
 .content__title {
@@ -193,16 +192,18 @@ body {
   max-width: 208px;
   position: relative;
   z-index: 3;
+  padding: 0 30px;
 }
 
 .content__links {
   position: relative;
   z-index: 3;
+  padding: 0 30px;
 }
 
 .content__link {
-  font-size: 32px;
-  line-height: 50px;
+  font-size: 26px;
+  line-height: 44px;
   text-align: right;
   color: #ffffff;
 }
@@ -218,17 +219,13 @@ body {
   color: #f5b7ae;
 }
 
-.content__bottom {
-  padding: 0 30px;
-}
-
 .content__subtitle {
-  font-size: 62px;
-  line-height: 56px;
+  font-size: 26px;
+  line-height: 44px;
   color: #ffffff;
-  max-width: 274px;
   position: relative;
   z-index: 3;
+  padding: 0 30px;
 }
 
 audio {
