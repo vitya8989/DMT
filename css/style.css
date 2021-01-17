@@ -302,14 +302,14 @@ audio {
     line-height: 45px;
     border-top: 2px solid #ffffff;
     position: relative;
-    padding: 4px 0 4px 10px;
+    padding: 5px 0 3px 10px;
   }
 
   .content__link:after {
     content: "→";
     position: absolute;
     right: 0;
-    top: 4px;
+    top: 6px;
     width: 35px;
     height: 10px;
     color: #ffffff;
