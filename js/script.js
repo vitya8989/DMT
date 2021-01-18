@@ -115,13 +115,21 @@ if (mediaQueryMobile.matches) {
       let x = event.beta;
       let y = event.gamma;
 
+      if (x > 88) { x = 88 };
+      if (x < -30) { x = -30 };
+      if (y > 58) { y = 58 };
+      if (y < -58) { y = -58 };
+
+      x += 60;
+      y += 90;
+
       frontMobile.style.webkitTransform =
          frontMobile.style.transform =
-         'translateX(' + y + '%) ' +
-         'translateY(' + x + '%) ';
+         'translateX(' + (-120 * y / 180 + 60) + 'px) ' +
+         'translateY(' + (-120 * x / 180 + 60) + 'px) ';
       backMobile.style.webkitTransform =
          backMobile.style.transform =
-         'translateX(' + y + '%) ' +
-         'translateY(' + x + '%) ';
+         'translateX(' + (-70 * y / 180 + 35) + 'px) ' +
+         'translateY(' + (-70 * x / 180 + 35) + 'px) ';
    });
 }
