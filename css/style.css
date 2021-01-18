@@ -293,8 +293,9 @@ audio {
     position: relative;
     display: block;
     background-color: #222222;
-    margin: -60px 0 0 0;
+    margin: -60px 0 -1px 0;
     z-index: 3;
+    padding: 0 0 0 0;
   }
 
   .content__title {
@@ -308,7 +309,8 @@ audio {
   }
 
   .content__links {
-    margin: 30px 0 0 0;
+    padding: 25px 30px 0 30px;
+    background-color: #222222;
   }
 
   .content__link {
@@ -349,8 +351,7 @@ audio {
   }
 
   .content__links {
-    padding: 0 15px;
-    margin: 25px 0 0 0;
+    padding: 25px 15px 0 15px;
   }
 
   .content__subtitle {
