@@ -259,6 +259,10 @@ audio {
     display: block;
   }
 
+  .play-icon {
+    top: 42%;
+  }
+
   .images__mobile {
     display: block;
     overflow: hidden;
@@ -338,7 +342,7 @@ audio {
     font-size: 41px;
     line-height: 39px;
     text-align: left;
-    padding: 0 15px;
+    padding: 30px 15px 0;
   }
 
   .content__links {
