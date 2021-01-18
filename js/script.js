@@ -111,13 +111,17 @@ if (mediaQueryMobile.matches) {
 
    // window.addEventListener('deviceorientation', handleOrientation);
    window.addEventListener('deviceorientation', function (event) {
+
+      let x = event.beta;
+      let y = event.gamma;
+
       frontMobile.style.webkitTransform =
          frontMobile.style.transform =
-         'translateX(' + event.beta + '%) ' +
-         'translateY(' + event.gamma + '%) ';
+         'translateX(' + y + '%) ' +
+         'translateY(' + x + '%) ';
       backMobile.style.webkitTransform =
          backMobile.style.transform =
-         'rotateX(' + event.beta + 'deg) ' +
-         'rotateY(' + event.gamma + 'deg) ';
+         'translateX(' + y + '%) ' +
+         'translateY(' + x + '%) ';
    });
 }
