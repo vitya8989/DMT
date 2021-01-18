@@ -153,10 +153,16 @@ body {
 
 .back__img-mobile {
   position: relative;
+  -webkit-transform: translate(-10%, -10%);
+      -ms-transform: translate(-10%, -10%);
+          transform: translate(-10%, -10%);
 }
 
 .main__img-mobile {
   position: absolute;
+  -webkit-transform: translate(-10%, -5%);
+      -ms-transform: translate(-10%, -5%);
+          transform: translate(-10%, -5%);
 }
 
 .back__img-mobile img,
@@ -276,9 +282,6 @@ audio {
     left: 0;
     width: 125%;
     height: 125%;
-    -webkit-transform: translate(-10%, -10%);
-        -ms-transform: translate(-10%, -10%);
-            transform: translate(-10%, -10%);
   }
 
   .back__img,
