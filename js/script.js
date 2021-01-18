@@ -103,12 +103,11 @@ if (mediaQueryMobile.matches) {
       let isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
 
       if (isiDevice) {
-         //backMobile.style = "-webkit-transform: translate(" + osY + "px, " + osX + "px);";
-         frontMobile.style.top = osXFast + "px;";
-         frontMobile.style.left = osYFast + "px;";
+         backMobile.style = "-moz-transform: translate(" + osY + "px, " + osX + "px);";
+         frontMobile.style = "-ms-transform: translate(" + osYFast + "px, " + osXFast + "px);";
       } else {
-         frontMobile.style.top = osXFast + "px;";
-         frontMobile.style.left = osYFast + "px;";
+         backMobile.style = "transform: translate(" + osY + "px, " + osX + "px);";
+         frontMobile.style = "transform: translate(" + osYFast + "px, " + osXFast + "px);";
       }
    }
 
