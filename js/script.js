@@ -96,8 +96,8 @@ if (mediaQueryMobile.matches) {
 
       let osX = (-60 * x / 180 + 30);
       let osY = (-60 * y / 180 + 30);
-      let osXFast = (-120 * x / 180 + 60);
-      let osYFast = (-120 * y / 180 + 60);
+      let osXFast = (-90 * x / 180 + 45);
+      let osYFast = (-90 * y / 180 + 45);
 
       let isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
 
