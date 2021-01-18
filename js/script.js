@@ -86,6 +86,8 @@ if (mediaQueryMobile.matches) {
       let x = event.beta;
       let y = event.gamma;
 
+      if (x > 89) { y = -y };
+
       if (x > 88) { x = 88 };
       if (x < -30) { x = -30 };
       if (y > 58) { y = 58 };
