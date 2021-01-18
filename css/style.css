@@ -266,7 +266,7 @@ audio {
   .images__mobile {
     display: block;
     overflow: hidden;
-    margin: 0 0 -20% 0;
+    margin: 0 0 -25% 0;
   }
 
   .back__img-mobile,
@@ -274,8 +274,8 @@ audio {
     display: block;
     top: 0;
     left: 0;
-    width: 120%;
-    height: 120%;
+    width: 125%;
+    height: 125%;
     -webkit-transform: translate(-10%, -10%);
         -ms-transform: translate(-10%, -10%);
             transform: translate(-10%, -10%);
