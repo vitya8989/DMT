@@ -83,8 +83,8 @@ if (mediaQueryMobile.matches) {
    let frontMobile = document.querySelector('.move__img-front-mobile');
 
    function handleOrientation(event) {
-      let x = event.beta;
-      let y = event.gamma;
+      let x = event.accelerationIncludingGravity.x;
+      let y = event.accelerationIncludingGravity.y;
 
 
       if (x > 88) { x = 88 };
@@ -111,5 +111,6 @@ if (mediaQueryMobile.matches) {
       }
    }
 
-   window.addEventListener('deviceorientation', handleOrientation);
+   //window.addEventListener('deviceorientation', handleOrientation);
+   window.addEventListener('devicemotion', handleOrientation);
 }
