@@ -84,7 +84,7 @@ if (mediaQueryMobile.matches) {
 
    function handleOrientation(event) {
       let x = event.beta;
-      let y = event.alpha;
+      let y = event.gamma;
 
       if (x > 120) { x = 120 };
       if (x < -60) { x = -60 };
