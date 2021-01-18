@@ -160,9 +160,9 @@ body {
 
 .main__img-mobile {
   position: absolute;
-  -webkit-transform: translate(-10%, -5%);
-      -ms-transform: translate(-10%, -5%);
-          transform: translate(-10%, -5%);
+  -webkit-transform: translate(-10%, -7.5%);
+      -ms-transform: translate(-10%, -7.5%);
+          transform: translate(-10%, -7.5%);
 }
 
 .back__img-mobile img,
