@@ -262,6 +262,7 @@ audio {
   .images__mobile {
     display: block;
     overflow: hidden;
+    margin: 0 0 -20% 0;
   }
 
   .back__img-mobile,
@@ -269,11 +270,11 @@ audio {
     display: block;
     top: 0;
     left: 0;
-    width: 110%;
-    height: 110%;
-    -webkit-transform: translate(-5%, -5%);
-        -ms-transform: translate(-5%, -5%);
-            transform: translate(-5%, -5%);
+    width: 120%;
+    height: 120%;
+    -webkit-transform: translate(-10%, -10%);
+        -ms-transform: translate(-10%, -10%);
+            transform: translate(-10%, -10%);
   }
 
   .back__img,
@@ -294,9 +295,9 @@ audio {
     font-size: 50px;
     line-height: 48px;
     max-width: none;
-    margin: 25px 0 0 0;
     max-width: 410px;
     margin: 0 auto;
+    padding: 30px 0 0 0;
   }
 
   .content__links {
