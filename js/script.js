@@ -86,7 +86,6 @@ if (mediaQueryMobile.matches) {
       let x = event.beta;
       let y = event.gamma;
 
-      if (x > 89) { y = -y };
 
       if (x > 88) { x = 88 };
       if (x < -30) { x = -30 };
@@ -96,8 +95,8 @@ if (mediaQueryMobile.matches) {
       x += 60;
       y += 90;
 
-      let osX = (-60 * x / 180 + 30);
-      let osY = (-60 * y / 180 + 30);
+      let osX = (-70 * x / 180 + 35);
+      let osY = (-70 * y / 180 + 35);
       let osXFast = (-120 * x / 180 + 60);
       let osYFast = (-120 * y / 180 + 60);
 
@@ -113,8 +112,4 @@ if (mediaQueryMobile.matches) {
    }
 
    window.addEventListener('deviceorientation', handleOrientation);
-   let isi = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
-   if (isi) {
-      alert('это iphone');
-   }
 }
