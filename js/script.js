@@ -79,8 +79,8 @@ if (mediaQueryMobile.matches) {
    contentTop.appendChild(contentSubtitle);
 
 
-   let backMobile = document.querySelector('.move__img-mobile');
-   let frontMobile = document.querySelector('.move__img-front-mobile');
+   let backMobile = document.querySelector('.back__img-mobile');
+   let frontMobile = document.querySelector('.main__img-mobile ');
 
    function handleOrientation(event) {
       let x = event.beta;
@@ -103,11 +103,10 @@ if (mediaQueryMobile.matches) {
       let isiDevice = /ipad|iphone|ipod/i.test(navigator.userAgent.toLowerCase());
 
       if (isiDevice) {
-         backMobile.style = "-moz-transform: translate(" + osY + "px, " + osX + "px);";
-         frontMobile.style = "-ms-transform: translate(" + osYFast + "px, " + osXFast + "px);";
+         frontMobile.style = "left: " + osYFast + "px; top: " + osXFast + "px;";
       } else {
-         backMobile.style = "transform: translate(" + osY + "px, " + osX + "px);";
-         frontMobile.style = "transform: translate(" + osYFast + "px, " + osXFast + "px);";
+         //backMobile.style = "transform: translate(" + osY + "px, " + osX + "px);";
+         frontMobile.style = "left: " + osYFast + "px; top: " + osXFast + "px;";
       }
    }
 
