@@ -88,7 +88,7 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 @font-face {
@@ -328,6 +328,13 @@ audio {
   .content__subtitle {
     max-width: 410px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 470px) {
+  .images__mobile {
+    margin: -10% 0 -12.5% -12.5%;
+    width: 125%;
   }
 }
 

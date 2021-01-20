@@ -27,8 +27,20 @@ if (mediaQuery.matches) {
       let offsetY = (e.clientY / window.innerHeight * -20) + 10;
       let offsetXfast = (e.clientX / window.innerWidth * -60) + 30;
       let offsetYfast = (e.clientY / window.innerHeight * -40) + 20;
-      dmtMove.setAttribute("style", "transform: translate(" + offsetX + "px, " + offsetY + "px);");
-      dmtMoveFront.setAttribute("style", "transform: translate(" + offsetXfast + "px, " + offsetYfast + "px);");
+      let blurBack = Math.sqrt(offsetX * offsetX + offsetY * offsetY) / 8;
+
+      dmtMove.style.filter =
+         'blur(' + blurBack + 'px)';
+
+      dmtMove.style.webkitTransform =
+         dmtMove.style.transform =
+         'translateX(' + offsetX + 'px) ' +
+         'translateY(' + offsetY + 'px)';
+
+      dmtMoveFront.style.webkitTransform =
+         dmtMoveFront.style.transform =
+         'translateX(' + offsetXfast + 'px) ' +
+         'translateY(' + offsetYfast + 'px) ';
    }
 }
 
@@ -77,39 +89,9 @@ if (mediaQueryMobile.matches) {
    let contentTop = document.querySelector('.content__top');
    let contentSubtitle = document.querySelector('.content__subtitle');
    contentTop.appendChild(contentSubtitle);
-
-
    let backMobile = document.querySelector('.move__img-mobile');
    let frontMobile = document.querySelector('.move__img-front-mobile');
 
-   // function handleOrientation(event) {
-   //    let x = event.beta;
-   //    let y = event.gamma;
-
-
-   //    if (x > 88) { x = 88 };
-   //    if (x < -30) { x = -30 };
-   //    if (y > 58) { y = 58 };
-   //    if (y < -58) { y = -58 };
-
-   //    x += 60;
-   //    y += 90;
-
-   //    let osX = (-70 * x / 180 + 35);
-   //    let osY = (-70 * y / 180 + 35);
-   //    let osXFast = (-120 * x / 180 + 60);
-   //    let osYFast = (-120 * y / 180 + 60);
-
-   //    frontMobile.style.webkitTransform =
-   //       frontMobile.style.transform =
-   //       'translate(' + osYFast + 'px ' + osXFast + 'px)';
-
-   //    backMobile.style.webkitTransform =
-   //       backMobile.style.transform =
-   //       'translate(' + osY + 'px ' + osX + 'px)';
-   // }
-
-   // window.addEventListener('deviceorientation', handleOrientation);
    window.addEventListener('deviceorientation', function (event) {
 
       let x = event.beta;
